@@ -18,4 +18,4 @@ def summ(arr):
         summ = summ + float(i)
     return  summ
 
-print(((weight*(summ(xc)/len(xc)))+(summ(xa)/len(xa))+(summ(xb)/len(xb)))/3+weight)
+print(((weight*(summ(xc)/len(xc)))+(summ(xa)/len(xa))+(summ(xb)/len(xb)))/(3+weight))
