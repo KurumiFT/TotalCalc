@@ -28,4 +28,4 @@ def summ(arr):
 
 
 print("\n")
-print("Средний тотал(советую занижать меньше): "+str((weight*summ(xc)+summ(xa)+summ(xb))/(2+weight)))
+print("Средний тотал(советую занижать): "+str((weight*summ(xc)+summ(xa)+summ(xb))/(2+weight)))
