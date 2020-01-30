@@ -15,15 +15,15 @@ print("Тоталы 2-ой команды: "+str(xb))
 def max_arr(arr):
     max = 0
     for i in xc:
-        if i > max:
-            max = i
+        if int(i) > max:
+            max = int(i)
     return max
 
 def min_arr(arr):
     min = 1000
     for i in xc:
-        if i < min:
-            min = i
+        if int(i) < min:
+            min = int(i)
     return min
 
 def summ(arr):
