@@ -42,7 +42,7 @@ print("\n")
 print("Средний тотал(не ориентируйтесь на него): "+str(normal))
 print("---------------------------------------")
 
-if (max(int(wins[0]),int(wins[1])) - min(int(wins[0]),int(wins[1])) <= 1):
+if (max(float(wins[0]),float(wins[1])) - min(float(wins[0]),float(wins[1])) <= 1):
     print("Рекомендуем ставить на Тотал {Total}М".format(Total=(normal+max_arr(xc))/2))
 else:
     print("Рекомендуем ставить на Тотал {Total}Б".format(Total=((normal+min_arr(xc))/2)))
