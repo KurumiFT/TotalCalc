@@ -1,4 +1,4 @@
-wins = input("Введите победы первой команды и второй в очных: ").split(",")
+wins = input("Введите коэффициенты на победы первой и второй команды(через запятую) : ").split(",")
 weight = int(input("Введите вес очных матчей: "))
 lastweight = int(input("Вес последних матчей: "))
 
@@ -42,7 +42,7 @@ print("\n")
 print("Средний тотал(не ориентируйтесь на него): "+str(normal))
 print("---------------------------------------")
 
-if (max(int(wins[0]),int(wins[1])) - min(int(wins[0]),int(wins[1])) == 0) or (max(int(wins[0]),int(wins[1])) - min(int(wins[0]),int(wins[1])) == 1):
+if (max(int(wins[0]),int(wins[1])) - min(int(wins[0]),int(wins[1])) <= 1):
     print("Рекомендуем ставить на Тотал {Total}М".format(Total=(normal+max_arr(xc))/2))
 else:
     print("Рекомендуем ставить на Тотал {Total}Б".format(Total=((normal+min_arr(xc))/2)))
